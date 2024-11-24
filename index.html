@@ -3,25 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>URL Redirect</title>
+    <title>Domain Redirect</title>
     <script>
         // 等待页面加载完成后执行
         window.onload = function() {
-            // 获取当前 URL 路径
-            const currentPath = window.location.pathname;
+            // 获取当前的域名
+            const currentDomain = window.location.hostname;
 
             // 加载 JSON 配置
             fetch('config.json')
                 .then(response => response.json())
                 .then(config => {
                     // 查找匹配的跳转规则
-                    const rule = config.rules.find(r => r.path === currentPath);
+                    const rule = config.rules.find(r => r.path === currentDomain);
 
                     // 如果找到匹配的规则，则执行跳转
                     if (rule) {
                         window.location.href = rule.redirectTo;
                     } else {
-                        console.log('当前路径没有找到匹配的跳转规则。');
+                        console.log('当前域名没有找到匹配的跳转规则。');
                     }
                 })
                 .catch(error => {
@@ -31,6 +31,6 @@
     </script>
 </head>
 <body>
-    <p>正在根据当前 URL 跳转...</p>
+    <p>正在根据当前域名跳转...</p>
 </body>
 </html>
