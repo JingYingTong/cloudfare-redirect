@@ -1,0 +1,12 @@
+{
+  "rules": [
+    {
+      "path": "homepage.6gw.top",
+      "redirectTo": "https://jing-homepage.tocmcc.cn/"
+    },
+    {
+      "path": "/old-page2",
+      "redirectTo": "https://another-site.example.com/"
+    }
+  ]
+}
