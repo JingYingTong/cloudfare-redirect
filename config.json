@@ -5,7 +5,7 @@
       "redirectTo": "https://jing-homepage.tocmcc.cn/"
     },
     {
-      "path": "/old-page2",
+      "path": "sources.example.com",
       "redirectTo": "https://another-site.example.com/"
     }
   ]
