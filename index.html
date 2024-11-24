@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URL Redirect</title>
+    <script>
+        // 等待页面加载完成后执行
+        window.onload = function() {
+            // 获取当前 URL 路径
+            const currentPath = window.location.pathname;
+
+            // 加载 JSON 配置
+            fetch('config.json')
+                .then(response => response.json())
+                .then(config => {
+                    // 查找匹配的跳转规则
+                    const rule = config.rules.find(r => r.path === currentPath);
+
+                    // 如果找到匹配的规则，则执行跳转
+                    if (rule) {
+                        window.location.href = rule.redirectTo;
+                    } else {
+                        console.log('当前路径没有找到匹配的跳转规则。');
+                    }
+                })
+                .catch(error => {
+                    console.error('加载配置文件失败:', error);
+                });
+        };
+    </script>
+</head>
+<body>
+    <p>正在根据当前 URL 跳转...</p>
+</body>
+</html>
