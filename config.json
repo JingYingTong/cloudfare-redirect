@@ -7,6 +7,10 @@
     {
       "path": "sources.example.com",
       "redirectTo": "https://another-site.example.com/"
+    },
+    {
+      "path": "alist.6gw.top",
+      "redirectTo": "https://frp-boy.com:29432"
     }
   ]
 }
