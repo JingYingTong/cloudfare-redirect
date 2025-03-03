@@ -1,15 +1,15 @@
 {
   "rules": [
     {
-      "path": "jellyfin.6gw.top",
-      "redirectTo": "https://frp-bus.com:34246"
+      "path": "alist.6gw.top",
+      "redirectTo": "https://frp-bus.com:34246/redirect/alist"
     },
     {
       "path": "sources.example.com",
       "redirectTo": "https://another-site.example.com/"
     },
     {
-      "path": "alist.6gw.top",
+      "path": "alist2.6gw.top",
       "redirectTo": "https://frp-boy.com:29432"
     }
   ]
