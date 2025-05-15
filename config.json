@@ -11,6 +11,10 @@
     {
       "path": "alist2.6gw.top",
       "redirectTo": "https://frp-boy.com:29432"
+    },
+    {
+      "path": "jellyfin.6gw.top",
+      "redirectTo": "https://frp-bus.com:34246/redirect/jellyfin"
     }
   ]
 }
