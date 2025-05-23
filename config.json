@@ -15,6 +15,10 @@
     {
       "path": "jellyfin.6gw.top",
       "redirectTo": "https://frp-bus.com:34246/redirect/jellyfin"
+    },
+    {
+      "path": "homepage.6gw.top",
+      "redirectTo": "https://frp-bus.com:34246/redirect/homepage"
     }
   ]
 }
